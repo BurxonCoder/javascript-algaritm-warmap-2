@@ -35,3 +35,17 @@ if (str.lenght < 4) {
 console.log(frontTimes("Abs", 3))
 
 
+
+//countXX
+
+function countXX(str) {
+    let count = 0
+    for (let i = 0; i < str.length-1; i++) {
+if (str[i] == 'x' && str[i + 1] =='x') {
+    count++
+    }        
+ }
+ return count
+}
+
+console.log(countXX("abcxx"));

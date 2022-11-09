@@ -49,3 +49,22 @@ if (str[i] == 'x' && str[i + 1] =='x') {
 }
 
 console.log(countXX("abcxx"));
+
+
+
+//doubleX
+
+// doubleX("axxbb") → true
+// doubleX("axaxax") → false
+// doubleX("xxxxx") → true
+
+function  doubleX(str) {
+let dubl = str.indexOf('x')  
+if (str[dubl + 1] === 'x') {
+    return true
+    
+} else{
+    return false
+}
+   }
+   console.log(doubleX("axxbb"));

@@ -23,13 +23,15 @@ console.log(stringTime("Hi", 3));
 // frontTimes 
 
 function frontTimes(str , n ) {
-    let str01 = ''
- for (let  i= 0;  i< n; i++) {
-      str01 +=str.slice(0 , -6)
- }
- return str01 
+if (str.lenght < 4) {
+    return str.substring(0 , 3).repeat(n) 
+    
+}else{
+    return str.substring(0,3).repeat(n)
+}
 
 }
-console.log(frontTimes("Chocolate", 3))
+
+console.log(frontTimes("Abs", 3))
 
 

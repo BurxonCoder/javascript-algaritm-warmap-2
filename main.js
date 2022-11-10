@@ -83,3 +83,16 @@ function stringBits(str) {
     
 }
   console.log(stringBits("Hello"));
+  
+  //stringSplosion
+  
+function stringSplosion (str){
+    let splosion = ""
+for (let i = 0; i < str.length; i++) {
+splosion += str.substring(0 , i)    
+}
+return splosion + str
+}
+
+console.log(stringSplosion("abs"));
+

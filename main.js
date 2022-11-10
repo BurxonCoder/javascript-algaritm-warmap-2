@@ -96,3 +96,17 @@ return splosion + str
 
 console.log(stringSplosion("abs"));
 
+
+
+//last2
+
+function last2(str) {
+    let last = ""
+    for (let i = 0; i < str.length-1; i++) {
+if ( str[i] == "x" && str[i - 1] == 'x') {
+    last++
+      }        
+    }
+    return last 
+}
+console.log(last2("axxxaaxx"))

@@ -68,3 +68,18 @@ if (str[dubl + 1] === 'x') {
 }
    }
    console.log(doubleX("axxbb"));
+   
+   
+   
+//stringBits
+
+
+function stringBits(str) {
+    let temp = ""   
+    for (let i = 0; i < str.length; i+=2) {
+        temp += str[i]
+        }
+    return temp
+    
+}
+  console.log(stringBits("Hello"));

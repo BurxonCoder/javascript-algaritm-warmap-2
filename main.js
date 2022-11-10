@@ -110,3 +110,17 @@ if ( str[i] == "x" && str[i - 1] == 'x') {
     return last 
 }
 console.log(last2("axxxaaxx"))
+
+
+//arrayCaunt9
+
+function arrayCaunt(nums) {
+    let count = 0
+    for (let i = 0; i < nums.length; i++) {
+if (nums[i]==9) {
+    count++
+   }      
+}
+    return count  
+}
+console.log(arrayCaunt([1, 9, 9]));
